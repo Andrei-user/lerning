@@ -20,6 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+		    'talker = wshop_nodes.minimal_publisher:main',
+		    'listener = wshop_nodes.minimal_subscriber:main',
+        'composed = wshop_nodes.composed_nodes:main'
         ],
     },
 )
